@@ -1,0 +1,4 @@
+[build]
+  base = "robogenius-react"
+  command = "npm run build"
+  publish = ".next"
