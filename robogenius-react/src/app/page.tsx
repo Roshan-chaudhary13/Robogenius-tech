@@ -134,26 +134,7 @@ export default function Home() {
     }
   ]
 
-  const testimonials = [
-    {
-      quote: 'RoboGenius automated our entire invoice processing pipeline. We went from 3 days per cycle to 2 hours. The ROI paid for itself in 6 weeks.',
-      name: 'Rajesh Mehta',
-      role: 'CFO, FinServ India',
-      icon: Users
-    },
-    {
-      quote: 'Their RPA bots handle 12,000+ transactions daily with zero errors. Our ops team now focuses on strategy instead of data entry.',
-      name: 'Priya Sharma',
-      role: 'COO, LogiTrack Solutions',
-      icon: Users
-    },
-    {
-      quote: 'Exceptional technical expertise. The team understood our complex SAP workflows deeply and delivered automation that exceeded expectations.',
-      name: 'Anil Kapoor',
-      role: 'CTO, ManufacturePro',
-      icon: Users
-    }
-  ]
+
 
   return (
     <div className="w-full relative overflow-x-hidden flex flex-col">
@@ -288,7 +269,7 @@ export default function Home() {
                     <Target className="h-6 w-6 text-zinc-900 dark:text-white" />
                   </div>
                   <div>
-                    <div className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">300+</div>
+                    <div className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">100+</div>
                     <div className="text-sm text-zinc-600 dark:text-zinc-400">Projects Delivered</div>
                   </div>
                 </div>
@@ -309,7 +290,7 @@ export default function Home() {
                 {/* Mini Stats Grid */}
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="flex flex-col items-center justify-center transition-transform hover:-translate-y-1 cursor-default">
-                    <span className="text-xl font-bold text-zinc-900 dark:text-white sm:text-2xl">150+</span>
+                    <span className="text-xl font-bold text-zinc-900 dark:text-white sm:text-2xl">50+</span>
                     <span className="text-[10px] uppercase tracking-wider text-zinc-500 font-medium sm:text-xs">Clients</span>
                   </div>
                   <div className="w-px h-full bg-zinc-200 dark:bg-white/10 mx-auto" />
@@ -319,7 +300,7 @@ export default function Home() {
                   </div>
                   <div className="w-px h-full bg-zinc-200 dark:bg-white/10 mx-auto" />
                   <div className="flex flex-col items-center justify-center transition-transform hover:-translate-y-1 cursor-default">
-                    <span className="text-xl font-bold text-zinc-900 dark:text-white sm:text-2xl">8+</span>
+                    <span className="text-xl font-bold text-zinc-900 dark:text-white sm:text-2xl">5+</span>
                     <span className="text-[10px] uppercase tracking-wider text-zinc-500 font-medium sm:text-xs">Years</span>
                   </div>
                 </div>
@@ -418,10 +399,10 @@ export default function Home() {
           </div>
 
           <div className="mt-12 md:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
-            <StatItem value={150} suffix="+" label="Happy Clients" delay={0.1} />
-            <StatItem value={300} suffix="+" label="Projects Delivered" delay={0.2} />
+            <StatItem value={50} suffix="+" label="Happy Clients" delay={0.1} />
+            <StatItem value={100} suffix="+" label="Projects Delivered" delay={0.2} />
             <StatItem value={98} suffix="%" label="Automation Success Rate" delay={0.3} />
-            <StatItem value={8} suffix="+" label="Years of Excellence" delay={0.4} />
+            <StatItem value={5} suffix="+" label="Years of Excellence" delay={0.4} />
           </div>
         </div>
       </section>
@@ -527,61 +508,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- TESTIMONIALS SECTION --- */}
-      <section className="w-full py-12 md:py-16 px-6 md:px-20 bg-gradient-to-b from-[var(--surface-light)] to-[var(--background)]">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
-            <div className="inline-block rounded-md border border-[var(--neon-blue)]/20 px-3 py-1 text-xs font-bold text-[var(--neon-blue)] uppercase tracking-wide">
-              💬 CLIENT STORIES
-            </div>
-            <h2 className="text-3xl md:text-5xl font-extrabold leading-tight text-[var(--text-primary)]">
-              Trusted by Industry<br />Leaders Across India
-            </h2>
-            <p className="text-sm md:text-base text-[var(--text-secondary)]">
-              Real results from real businesses that chose intelligent automation.
-            </p>
-          </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((item, i) => (
-              <motion.div
-                key={item.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * i }}
-                className="flex flex-col p-8 rounded-3xl glass-panel glass-panel-hover group"
-              >
-                <div className="text-gradient text-5xl font-black leading-none h-6 select-none">
-                  “
-                </div>
-                {/* Stars */}
-                <div className="flex gap-0.5 mt-2 mb-4">
-                  {Array.from({ length: 5 }).map((_, idx) => (
-                    <Star key={idx} className="h-4.5 w-4.5 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-[var(--text-secondary)] leading-relaxed flex-1 italic">
-                  {item.quote}
-                </p>
-                <div className="mt-6 flex items-center gap-3 pt-4 border-t border-[var(--border)]/40">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-[var(--neon-blue)]/20 to-[var(--neon-purple)]/15 flex items-center justify-center text-[var(--neon-blue)]">
-                    <item.icon className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-[var(--text-primary)]">
-                      {item.name}
-                    </h4>
-                    <p className="text-xs text-[var(--text-muted)]">
-                      {item.role}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* --- CTA SECTION --- */}
       <section className="w-full py-10 px-6 md:px-20 relative z-10">

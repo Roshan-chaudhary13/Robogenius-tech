@@ -13,3 +13,8 @@ build/
 
 # Logs
 *.log
+
+# Env
+.env*
+!.env.example
+

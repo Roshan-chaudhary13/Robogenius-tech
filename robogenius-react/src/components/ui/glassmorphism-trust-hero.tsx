@@ -134,7 +134,7 @@ export default function HeroSection() {
                     <Target className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <div className="text-3xl font-bold tracking-tight text-white">150+</div>
+                    <div className="text-3xl font-bold tracking-tight text-white">100+</div>
                     <div className="text-sm text-zinc-400">Projects Delivered</div>
                   </div>
                 </div>

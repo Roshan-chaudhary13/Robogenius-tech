@@ -10,11 +10,10 @@ import { Button } from '@/components/ui/button'
 
 export default function About() {
   const timelineEvents = [
-    { year: '2016', label: 'Founded' },
-    { year: '2018', label: '50+ Projects' },
-    { year: '2020', label: 'RPA Focus' },
-    { year: '2022', label: 'AI Expansion' },
-    { year: '2024', label: '300+ Clients' },
+    { year: '2021', label: 'Founded' },
+    { year: '2023', label: '15+ Projects' },
+    { year: '2025', label: 'Incorporated as LLP' },
+    { year: '2026', label: 'AI Expansion' },
   ]
 
   const techs = [
@@ -109,7 +108,7 @@ export default function About() {
               className="text-base md:text-lg leading-relaxed text-[var(--text-secondary)]"
             >
               RoboGenius Tech is a technology company on a mission to eliminate manual work through intelligent automation. 
-              Founded with a vision to democratise RPA for businesses of every size, we&apos;ve delivered over 300 automation 
+              Founded with a vision to democratise RPA for businesses of every size, we&apos;ve delivered over 100 automation 
               solutions across industries.
             </motion.p>
 

@@ -179,29 +179,24 @@ export default function Services() {
                   </span>
                 </div>
 
-                <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] leading-tight">
                   Robotic Process Automation
                 </h2>
 
-                <p className="text-sm md:text-base leading-relaxed text-zinc-400">
+                <p className="text-sm md:text-base leading-relaxed text-[var(--text-secondary)]">
                   Our RPA solutions deploy intelligent software bots that replicate human actions across digital systems. From data entry to complex workflows, we automate end-to-end processes with precision, speed, and zero errors — freeing your workforce for high-value strategic work.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                   {services[0].benefits.map((b) => (
-                    <div key={b} className="flex items-center gap-2 text-xs text-zinc-300">
+                    <div key={b} className="flex items-center gap-2 text-xs text-[var(--text-secondary)]">
                       <CheckCircle2 className="h-4.5 w-4.5 text-[var(--neon-cyan)] shrink-0" />
                       <span>{b}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-4">
-                  <Button className="bg-white text-zinc-950 hover:bg-zinc-200 font-bold h-11 px-6 rounded-full flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-[0_4px_12px_rgba(255,205,117,0.3)] cursor-pointer">
-                    Explore RPA Solutions
-                    <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </div>
+
               </div>
 
               {/* Featured Right Visual Flow */}
@@ -232,7 +227,7 @@ export default function Services() {
                     className="absolute h-14 w-14 rounded-full glass-panel flex flex-col items-center justify-center z-10 transition-all duration-300 hover:scale-110 border-[var(--neon-blue)]/30"
                     style={{ left: n.x, top: n.y, transform: 'translate(-50%, -50%)' }}
                   >
-                    <span className="text-xs font-bold text-zinc-300">{n.label}</span>
+                    <span className="text-xs font-bold text-[var(--text-secondary)]">{n.label}</span>
                   </div>
                 ))}
               </div>

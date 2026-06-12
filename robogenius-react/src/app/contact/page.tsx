@@ -357,6 +357,17 @@ export default function Contact() {
                 </div>
               </div>
 
+              {/* Card 1.5: Sales */}
+              <div className="p-6 rounded-3xl glass-panel glass-panel-hover flex gap-4 text-left hover:border-[var(--neon-blue)]/30 transition-all duration-300">
+                <div className="h-10 w-10 rounded-lg flex items-center justify-center bg-[var(--neon-blue)]/10 text-[var(--neon-blue)] shrink-0">
+                  <Mail className="h-5 w-5" />
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold text-[var(--text-primary)]">Sales</h4>
+                  <p className="text-xs text-[var(--text-secondary)] break-all">Sales@robogeniustech.co.in</p>
+                </div>
+              </div>
+
               {/* Card 2: Support */}
               <div className="p-6 rounded-3xl glass-panel glass-panel-hover flex gap-4 text-left hover:border-[var(--neon-blue)]/30 transition-all duration-300">
                 <div className="h-10 w-10 rounded-lg flex items-center justify-center bg-[var(--neon-blue)]/10 text-[var(--neon-blue)] shrink-0">
